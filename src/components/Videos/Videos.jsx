@@ -13,7 +13,7 @@ const Videos = ({ videos, loading, onShowDetails }) => {
   }
 
   return (
-    <section className="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pb-28">
+    <section className="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-4 pb-28">
       {videos.map(video => (
         <VideoCard key={video.video_id} video={video} onShowDetails={onShowDetails}></VideoCard>
       ))}
