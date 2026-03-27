@@ -20,7 +20,7 @@ const VideoCard = ({ video, onShowDetails }) => {
   const { video_id, thumbnail, title, authors, others } = video;
 
   return (
-    <div className="card bg-base-100">
+    <div className="card bg-base-100 hover:shadow-md transition-shadow duration-200">
       <figure className="relative">
         <img className="w-full h-[150px] object-cover" src={thumbnail} alt={title} />
         {others.posted_date && (
