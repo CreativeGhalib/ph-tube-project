@@ -22,7 +22,7 @@ const VideoCard = ({ video, onShowDetails }) => {
   return (
     <div className="card bg-base-100 hover:shadow-md transition-shadow duration-200">
       <figure className="relative">
-        <img className="w-full h-[150px] object-cover" src={thumbnail} alt={title} />
+        <img className="w-full h-[180px] object-cover" src={thumbnail} alt={title} />
         {others.posted_date && (
           <span className="absolute bottom-2 right-2 text-sm rounded text-white bg-black px-2">
             {formatTime(others.posted_date)}
