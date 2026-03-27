@@ -16,7 +16,7 @@ const Navbar = ({ onSearch, onSortByView }) => {
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input id="search-input" type="search" placeholder="Search" onKeyUp={e => onSearch(e.target.value)} />
+            <input id="search-input" type="search" placeholder="Search videos..." onKeyUp={e => onSearch(e.target.value)} />
           </label>
         </div>
         <div className="flex gap-3">
