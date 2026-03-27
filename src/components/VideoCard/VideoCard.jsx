@@ -49,8 +49,8 @@ const VideoCard = ({ video, onShowDetails }) => {
         </div>
       </div>
 
-      <button onClick={() => onShowDetails(video_id)} className="btn btn-block">
-        Show Details
+      <button onClick={() => onShowDetails(video_id)} className="btn btn-block btn-sm">
+        Details
       </button>
     </div>
   );
