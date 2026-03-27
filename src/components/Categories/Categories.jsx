@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Categories = ({ categories, activeCategory, onCategoryClick, onAllClick }) => {
   return (
-    <nav className="flex py-5 justify-center gap-5 flex-wrap">
+    <nav className="flex py-5 justify-center gap-3 flex-wrap px-4">
       <button
         id="btn-all"
         onClick={onAllClick}
