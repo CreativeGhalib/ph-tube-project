@@ -21,9 +21,15 @@ const Navbar = ({ onSearch, onSortByView }) => {
               type="search"
               placeholder="Search videos..."
               onKeyUp={e => onSearch(e.target.value)}
+              onChange={e => {
+                if (e.target.value === '') onSearch('');
+              }}
             />
           </label>
-          <button onClick={() => onSearch(document.getElementById('search-input').value)} className="btn btn-sm md:btn-md bg-[#FF1F3D] text-white">
+          <button
+            onClick={() => onSearch(document.getElementById('search-input').value)}
+            className="btn btn-sm md:btn-md bg-[#FF1F3D] text-white"
+          >
             Search
           </button>
         </div>
